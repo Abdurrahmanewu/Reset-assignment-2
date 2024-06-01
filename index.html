@@ -7,33 +7,58 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="nav-section">
-        <div style="display: flex" class="logoSection">
-          <img
-            style="margin-top: 15px; width: 60px; height: 48px"
-            src="/Images/Group 40071 (2).png"
-            alt=""
-          />
-          <h1 style="margin-left: 20px">
-            Hero
-            <span style="color: rgba(255, 84, 0, 1)">Travel</span>
-          </h1>
+    <!-- nav part -->
+    <nav class="navbar">
+      <div class="logo-section">
+        <img src="Images/Logo.png" alt="" srcset="" />
+        <h1 style="margin-left: 10px">
+          Travel <span style="color: rgba(255, 84, 0, 1)">Guru</span>
+        </h1>
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="menu">
+        <li>
+          <a href=""><span style="color: rgba(255, 84, 0, 1)">Home</span></a>
+        </li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Explore your travel -->
+    <div class="explore">
+      <div class="exploreOverlay">
+        <div class="explore-content">
+          <h2>Explore Your Travel</h2>
+          <p>
+            Dolor sit amet consectetur. suspendisse vitae ultricies dolor
+            adipiscing. In et odio enim ac quis sapien urna eu phasellus.
+          </p>
         </div>
-        <div class="navigation">
-          <ul>
-            <li>
-              <a href=""
-                ><span style="color: rgba(255, 84, 0, 1)">Home</span></a
-              >
-            </li>
-            <li><a href="">Packages</a></li>
-            <li><a href="">Testimonials</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
+        <div class="explore-search">
+          <input class="input-box" type="text" placeholder="Where go" />
+
+          <select class="input-box" name="" id="">
+            <option>Whne</option>
+            <option>Summer</option>
+            <option>Winter</option>
+            <option>Fall</option>
+          </select>
+
+          <select class="input-box" name="" id="">
+            <option>Select Type</option>
+            <option>Solo</option>
+            <option>Family</option>
+            <option>Group</option>
+          </select>
+          <button style="text-align: center; background-color: rgba(255, 84, 0, 1);" class="input-box"><a style="text-decoration: none;" href="">Find Now</a></button>
         </div>
       </div>
-    </header>
+    </div>
   </body>
 </html>
