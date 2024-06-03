@@ -5,8 +5,8 @@
 }
 /* Navigation part */
 /* .nav-section {
-  width: 80%;
-  /* max-width: 1100px; */
+  /*width: 80%; */
+/* max-width: 1100px; */
 /* margin: 50px auto; */
 /* border: 2px solid chocolate; */
 /* display: flex;
@@ -27,11 +27,17 @@ a {
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+
   padding: 0;
 }
 
+main {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
 .navbar {
-  width: 80%;
+  /*width: 80%; */
   margin: 50px auto;
   display: flex;
   justify-content: space-between;
@@ -87,7 +93,7 @@ body {
 
 /* Explore your travel */
 .explore {
-  width: 80%;
+  /*width: 80%; */
   margin: 0 auto;
   /* border: 2px solid crimson; */
   background-image: url("Images/Group\ 13\ \(1\)\ \(1\).png");
@@ -95,8 +101,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  border-radius: 16px;
 }
 .exploreOverlay {
+  border-radius: 16px;
   height: 100%;
   width: 100%;
   background-image: linear-gradient(#131318, #13131800);
@@ -115,7 +123,7 @@ body {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  /*width: 80%; */
   margin: 0 auto;
   /* border: 2px solid yellow; */
   border-radius: 8px;
@@ -129,6 +137,67 @@ body {
   font-size: 16px;
   /* margin-top: 15px;
   margin-left: 28px; */
+}
+/* <!-- Choose Your Destination --> */
+
+.destination-section {
+  margin-top: 100px;
+}
+
+.destination-sub-container {
+  display: grid;
+}
+.destination-conatiner {
+  gap: 24px;
+  display: grid;
+  /* justify-content: center; */
+  /* background-color: antiquewhite; */
+  max-width: 1170px;
+}
+
+.destination-sub-container-1 {
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  justify-content: space-between;
+}
+.destination-sub-container-2 {
+  grid-template-columns: 2fr 3fr 2fr;
+  gap: 24px;
+}
+.destination-sub-container-3 {
+  grid-template-columns: 4fr 6fr;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.destination-item {
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 16px;
+}
+
+.destination-item-1 {
+  background-image: url("Images/maldives.png");
+}
+.destination-item-2 {
+  background-image: url("Images/indonesia.png");
+}
+.destination-item-3 {
+  background-image: url("Images/Srilanka.png");
+}
+.destination-item-4 {
+  background-image: url("Images/NorthAmerica.png");
+}
+.destination-item-5 {
+  background-image: url("Images/Kashmir.png");
+  /* padding-right: 0px; */
+}
+.destination-item-6 {
+  background-image: url("Images/Bangladesh.png");
+}
+
+.destination-item-7 {
+  background-image: url("Images/Bandarban.png");
 }
 
 /* All media Queries */
@@ -169,6 +238,8 @@ body {
     font-size: 1rem;
   }
   .explore-search {
+    /* max-width: 800px; */
+    width: 95%;
     display: flex;
     flex-direction: row;
     gap: 30px;
