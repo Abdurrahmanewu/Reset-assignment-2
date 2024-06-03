@@ -218,7 +218,44 @@ main {
   text-decoration: none;
   color: white;
 }
+/* <!-- Why Choose Us section --> */
 
+.why-choose-us-section {
+  margin: 100px auto;
+}
+.why-choose-info {
+  text-align: center;
+}
+.why-choose-info h2 {
+  font-size: 2.5rem;
+}
+
+.choose-sub-card {
+  display: flex;
+  gap: 24px;
+}
+.choose-card {
+  max-width: 573px;
+  padding: 32px;
+}
+.choose-card1 {
+  background-color: rgba(251, 181, 99, 0.05);
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  border-radius: 16px;
+  margin: 0 auto;
+}
+.choose-card2 {
+  background-color: rgba(41, 206, 246, 0.05);
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  border-radius: 16px;
+  margin: 0 auto;
+}
+.choose-card3 {
+  background-color: rgba(233, 68, 68, 0.05);
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  border-radius: 16px;
+  margin: 24px auto;
+}
 /* All media Queries */
 
 /* Responsive adjustments */
@@ -318,5 +355,15 @@ main {
   .destination-sub-container-3 {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+  /* <!-- Why Choose Us section --> */
+  .choose-sub-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 auto;
+  }
+  .choose-card {
+    max-width: 335px;
+    padding: 32px;
   }
 }
