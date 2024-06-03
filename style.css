@@ -3,26 +3,6 @@
 *::before {
   box-sizing: border-box;
 }
-/* Navigation part */
-/* .nav-section {
-  /*width: 80%; */
-/* max-width: 1100px; */
-/* margin: 50px auto; */
-/* border: 2px solid chocolate; */
-/* display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
-*/
-/* .navigation ul,
-a {
-  display: flex;
-  gap: 50px;
-  list-style-type: none;
-  font-size: 18px;
-  text-decoration: none;
-  color: black;
-} */
 
 body {
   font-family: Arial, sans-serif;
@@ -143,18 +123,27 @@ main {
 .destination-section {
   margin-top: 100px;
 }
-
-.destination-sub-container {
-  display: grid;
+.destination-title {
+  text-align: center;
 }
+.destination-title h2 {
+  font-size: 2.5rem;
+}
+.destination-title p {
+  font-size: 1rem;
+}
+
 .destination-conatiner {
-  gap: 24px;
   display: grid;
+  gap: 24px;
   /* justify-content: center; */
   /* background-color: antiquewhite; */
   max-width: 1170px;
 }
 
+.destination-sub-container {
+  display: grid;
+}
 .destination-sub-container-1 {
   grid-template-columns: 1fr 1fr;
   gap: 24px;
@@ -174,6 +163,13 @@ main {
   background-repeat: no-repeat;
   height: 300px;
   border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.destination-item h2 {
+  color: rgba(255, 255, 255, 1);
+  font-weight: bolder;
 }
 
 .destination-item-1 {
@@ -198,6 +194,29 @@ main {
 
 .destination-item-7 {
   background-image: url("Images/Bandarban.png");
+}
+
+/* <!-- popular tour section --> */
+
+.polular-tour-section {
+  margin: 100px auto;
+  display: flex;
+}
+.popular-tour-info {
+  padding-right: 50px;
+}
+.popular-tour-info button {
+  background-color: rgba(255, 84, 0, 1);
+
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  border: white;
+  font-size: 20px;
+}
+.popular-tour-info a {
+  text-decoration: none;
+  color: white;
 }
 
 /* All media Queries */
@@ -247,5 +266,57 @@ main {
     align-items: center;
     margin: 60px auto;
     height: 20%;
+  }
+}
+@media (max-width: 475px) {
+  /* <!-- popular tour section --> */
+  .polular-tour-section {
+    display: flex;
+    flex-direction: column;
+    margin: 24px auto;
+    padding: 0 auto;
+  }
+  .popular-tour-info {
+    padding: 20px;
+  }
+  .popular-tour-image {
+    margin: 0 auto;
+  }
+  .popular-tour-image img {
+    max-width: 355px;
+  }
+  /* Choose Your Destination */
+
+  .destination-title {
+    text-align: center;
+  }
+  .destination-title h2 {
+    font-size: 1.25rem;
+  }
+  .destination-title p {
+    font-size: 0.875rem;
+  }
+  .destination-conatiner {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* gap: 16px; */
+    max-width: 335px;
+  }
+  .destination-sub-container {
+    display: grid;
+    /* flex-direction: column; */
+  }
+  .destination-sub-container-1 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .destination-sub-container-2 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .destination-sub-container-3 {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 }
