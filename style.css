@@ -435,6 +435,19 @@ footer {
   height: 500px;
   border-radius: 16px;
 }
+.promo {
+  /* here is a problem */
+  margin-left: 325px;
+  margin-top: 310px;
+  transform: rotate(-20deg);
+  background-color: rgba(255, 84, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  width: 324px;
+  height: 120px;
+  border-radius: 16px;
+  text-align: center;
+  padding: 20px;
+}
 
 /* footer section */
 
