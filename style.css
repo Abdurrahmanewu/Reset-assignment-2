@@ -15,6 +15,11 @@ main {
   margin: 0 auto;
   max-width: 1170px;
 }
+footer {
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgba(19, 19, 24, 0.05);
+}
 
 .navbar {
   /*width: 80%; */
@@ -256,6 +261,213 @@ main {
   border-radius: 16px;
   margin: 24px auto;
 }
+
+/* <!-- Deals & Discounts section --> */
+
+.deals-discounts-section {
+  margin: 100px auto;
+  /* border: 2px solid aquamarine; */
+}
+.deals-discounts-info {
+  text-align: center;
+}
+.deals-discounts-info h2 {
+  font-size: 2.5rem;
+}
+.deal {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 500px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+.deal1 {
+  background-image: url("Images/deal-1.png");
+  margin-top: 50px;
+}
+.deal2 {
+  background-image: url("Images/deal-2.png");
+  margin-top: 25px;
+}
+.deal3 {
+  background-image: url("Images/deal-1.png");
+  margin-top: 25px;
+}
+
+.deal-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  width: 50%;
+  height: 78%;
+}
+.deal-card-right {
+  margin-left: 535px;
+}
+.deal-card-left {
+  margin-left: 56px;
+}
+.icon-section {
+  display: flex;
+  padding: 50px;
+}
+.icon-section i {
+  color: rgba(255, 84, 0, 1);
+  margin-right: 5px;
+  margin-left: 30px;
+}
+
+.deal-info {
+  margin-left: 50px;
+}
+.deal-info h3 {
+  color: rgba(255, 84, 0, 1);
+}
+.deal-info button {
+  width: 150px;
+  height: 52px;
+  background-color: rgba(255, 84, 0, 1);
+  border-radius: 8px;
+  border: rgba(255, 84, 0, 1);
+}
+.deal-info a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+}
+.see-all-part {
+  margin: 50px auto;
+}
+.see-all {
+  width: 210px;
+  height: 52px;
+  background-color: rgba(255, 84, 0, 1);
+  border-radius: 8px;
+  border: rgba(255, 84, 0, 1);
+}
+.see-all-a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+}
+
+/* Perfect place section */
+
+.perfect-place-section {
+  display: flex;
+  margin: 50px auto;
+  /* border: 3px solid aquamarine; */
+}
+.perfect-place-info h2 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.perfect-place-info button {
+  width: 150px;
+  height: 52px;
+  margin-top: 32px;
+  background-color: rgba(255, 84, 0, 1);
+  border-radius: 8px;
+  border: rgba(255, 84, 0, 1);
+}
+.perfect-place-info a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+}
+.perfect-place-info li {
+  font-weight: bold;
+}
+.perfect-place-image {
+  background-image: url("Images/perfect-place.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 500px;
+  border-radius: 16px;
+}
+
+/* NewsLetter Section */
+.newsLetter-section {
+  /* border: 3px dotted blueviolet; */
+  display: flex;
+  gap: 24px;
+}
+.subscribe-box {
+  border: 1px solid rgba(255, 84, 0, 1);
+  border-radius: 8px;
+  padding: 40px;
+}
+.subscribe-box hr {
+  margin-top: 24px;
+}
+.subscribe-box input {
+  width: 400px;
+  height: 52px;
+  background-color: rgba(19, 19, 24, 0.05);
+  margin: 24px 0;
+  border: 1px solid rgba(19, 19, 24, 0.3);
+
+  border-radius: 8px;
+}
+.subscribe-box button {
+  width: 400px;
+  height: 52px;
+  margin-top: 32px;
+  background-color: rgba(255, 84, 0, 1);
+  border-radius: 8px;
+  border: rgba(255, 84, 0, 1);
+}
+.subscribe-box a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+}
+.newsLetter-img {
+  background-image: url("Images/mountainBD.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 500px;
+  border-radius: 16px;
+}
+
+/* footer section */
+
+.m-footer {
+  margin-top: 100px;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.m-footer img {
+  width: 40px;
+  height: 47px;
+}
+.m-footer p {
+  text-align: center;
+}
+.m-footer hr {
+  margin: 50px 0;
+  margin-left: 520px;
+  width: 870px;
+}
+.social-icon {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icon {
+  font-size: 1.5rem;
+}
 /* All media Queries */
 
 /* Responsive adjustments */
@@ -365,5 +577,20 @@ main {
   .choose-card {
     max-width: 335px;
     padding: 32px;
+  }
+  /* <!-- Deals & Discounts section --> */
+  .deals-discounts-section {
+    margin: 24px auto;
+    /* border: 2px solid aquamarine; */
+  }
+  .deals-discounts-info h2 {
+    font-size: 1.25rem;
+  }
+  .deal {
+    display: flex;
+  }
+  .deal-card {
+    width: 90%;
+    height: 60%;
   }
 }
